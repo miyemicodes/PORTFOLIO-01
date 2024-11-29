@@ -2,8 +2,9 @@ import asset001 from "./assets/TOUREST.png";
 import asset003 from "./assets/checkout.png";
 import asset004 from "./assets/LDH.png";
 import asset005 from "./assets/01.png";
+import asset006 from './assets/Ewebsite.png';
 
-const images = [
+const assets = [
   {
     id: 1,
     projectname: "Tourest",
@@ -36,6 +37,14 @@ const images = [
     img: asset005,
     websiteLinks: "https://my-dashboard-nine-tau.vercel.app/",
   },
+  {
+    id: 5,
+    projectname: "E-Commerce",
+    description:
+      "This e-commerce website, built with React.js and styled using Tailwind CSS, offers a seamless shopping experience with a modern, responsive design optimized for various devices. It includes key features such as dynamic product browsing with filtering and search capabilities, a fully functional shopping cart, and an intuitive checkout process. The application is designed with a modular architecture, relying heavily on reusable components like buttons, product cards, and modals, which enhance maintainability and scalability. Leveraging React Hooks, the website efficiently manages state and side effects, ensuring smooth user interactions. Additionally, React Router facilitates fast, client-side navigation, providing a seamless browsing experience without full-page reloads. The implementation adheres to modern development practices, focusing on performance optimizations and ensuring a lightweight and efficient application. This makes the platform not only user-friendly but also developer-centric, capable of evolving with new features and requirements.",
+    img: asset006,
+    websiteLinks: "https://e-commerce-website-psi-three.vercel.app/",
+  },
 ];
 
-export default images;
+export default assets;
