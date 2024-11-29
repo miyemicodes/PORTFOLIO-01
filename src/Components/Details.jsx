@@ -33,6 +33,8 @@ function createStudiesDetails(studiesDetails) {
 	);
 }
 
+{
+	/*
 function createWorkDetails(experienceDetails) {
 	return (
 		<Experience
@@ -46,8 +48,7 @@ function createWorkDetails(experienceDetails) {
 	);
 }
 
-{
-	/** 
+* 
 
 function createProjectDetails(projectDetails) {
   return (
@@ -76,9 +77,15 @@ function Details() {
 					EXPERIENCE
 				</h2>
 				<div className="flex flex-col gap-6 cursor-pointer ">
-					{myExperience.map(createWorkDetails)}
+					{myExperience.map((experience) => (
+						<Experience
+							key={experience.id}
+							{...experience}
+						/>
+					))}
 				</div>
-			</div>
+      </div>
+      
 			<div
 				className="relative"
 				id="skill"
