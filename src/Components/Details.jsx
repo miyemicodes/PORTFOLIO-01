@@ -10,61 +10,6 @@ import mySkills from "../techSkills";
 import Studies from "../Education";
 import Getintouch from "./Getintouch";
 
-function createSkillsDetails(skillsDetails) {
-	return (
-		<Skills
-			id={skillsDetails.id}
-			key={skillsDetails.id}
-			expertise={skillsDetails.expertise}
-		/>
-	);
-}
-
-function createStudiesDetails(studiesDetails) {
-	return (
-		<Education
-			id={studiesDetails.id}
-			key={studiesDetails.id}
-			Academy={studiesDetails.Academy}
-			course={studiesDetails.course}
-			period={studiesDetails.period}
-			degree={studiesDetails.degree}
-		/>
-	);
-}
-
-{
-	/*
-function createWorkDetails(experienceDetails) {
-	return (
-		<Experience
-			id={experienceDetails.id}
-			key={experienceDetails.id}
-			duration={experienceDetails.duration}
-			role={experienceDetails.role}
-			organization={experienceDetails.organization}
-			description={experienceDetails.description}
-		/>
-	);
-}
-
-* 
-
-function createProjectDetails(projectDetails) {
-  return (
-    <Projects
-      id={projectDetails.id}
-      key={projectDetails.id}
-      projectname={projectDetails.projectname}
-      description={projectDetails.description}
-      img={projectDetails.img}
-      websiteLinks={projectDetails.websiteLinks}
-    />
-  );
-}
-  */
-}
-
 function Details() {
 	return (
 		<div className=" px-8 overflow-y-auto overflow-hidden scroll-smooth remove-scrollbar pb-8">
@@ -84,8 +29,8 @@ function Details() {
 						/>
 					))}
 				</div>
-      </div>
-      
+			</div>
+
 			<div
 				className="relative"
 				id="skill"
@@ -95,7 +40,12 @@ function Details() {
 				</h2>
 
 				<div className="skills-list flex gap-4 flex-wrap cursor-pointer">
-					{mySkills.map(createSkillsDetails)}
+					{mySkills.map((skillset) => (
+						<Skills
+							key={skillset.id}
+							{...skillset}
+						/>
+					))}
 				</div>
 			</div>
 
@@ -104,7 +54,12 @@ function Details() {
 					EDUCATION
 				</h2>
 				<div className="flex flex-col gap-6 cursor-pointer">
-					{Studies.map(createStudiesDetails)}
+					{Studies.map((study) => (
+						<Education
+							key={study.id}
+							{...study}
+						/>
+					))}
 				</div>
 			</div>
 
