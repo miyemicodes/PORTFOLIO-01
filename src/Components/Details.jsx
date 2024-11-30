@@ -53,14 +53,13 @@ function Details() {
 				<h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
 					EDUCATION
 				</h2>
-				<div className="flex flex-col gap-6 cursor-pointer">
-					{Studies.map((study) => (
-						<Education
-							key={study.id}
-							{...study}
-						/>
-					))}
-				</div>
+
+				{Studies.map((study) => (
+					<Education
+						key={study.id}
+						{...study}
+					/>
+				))}
 			</div>
 
 			<div
@@ -70,14 +69,12 @@ function Details() {
 				<h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
 					PROJECTS
 				</h2>
-				<div className="flex flex-col gap-6 cursor-pointer">
-					{assets.map((asset) => (
-						<Projects
-							key={asset.id}
-							{...asset}
-						/>
-					))}
-				</div>
+				{assets.map((asset) => (
+					<Projects
+						key={asset.id}
+						{...asset}
+					/>
+				))}
 			</div>
 
 			<Getintouch />
