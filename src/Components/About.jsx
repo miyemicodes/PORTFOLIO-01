@@ -7,7 +7,7 @@ function About() {
         ABOUT
       </h2>
       <p className="text-lg text-slate-400 cursor-pointer">
-        A skilled Software Developer with experience in the industry. While my
+        A skilled software Developer with experience in the industry. While my
         expertise is primarily in frontend development, I have a track record of
         delivering cutting-edge systems for small and intermediate enterprises
         including fintech, education ,personal brands and portfolio. My
@@ -15,7 +15,7 @@ function About() {
         performance-driven approach.
         <br />
         When I'm not coding ,I do love to read novels, Engage in Research,
-        Listen to music.
+        Listen to podcasts.
       </p>
     </section>
   );

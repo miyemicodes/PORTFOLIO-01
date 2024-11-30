@@ -11,7 +11,7 @@ function Introduction() {
         </h1>
         <h2 className="text-xl font-bold text-slate-300">Frontend Developer</h2>
         <p className="text-lg text-slate-400">
-          I build Responsive,pixel perfect and highly functional websites.
+          I build responsive ,pixel perfect and highly functional websites.
         </p>
       </div>
 
