@@ -12,7 +12,7 @@ import Getintouch from "./Getintouch";
 
 function Details() {
 	return (
-		<div className=" px-8 overflow-y-auto overflow-hidden scroll-smooth remove-scrollbar pb-8">
+		<div className=" px-4 overflow-y-auto overflow-hidden scroll-smooth remove-scrollbar pb-8">
 			<About />
 			<div
 				className="relative"

@@ -19,24 +19,21 @@ const mySkills = [
     id: 5,
     expertise: "REACTJS",
   },
+
   {
     id: 6,
-    expertise: "POSTGRESSQL",
-  },
-  {
-    id: 7,
     expertise: "TAILWIND CSS",
   },
   {
-    id: 8,
+    id: 7,
     expertise: "Adobe XD to HTML",
   },
   {
-    id: 9,
+    id: 8,
     expertise: "FIGMA to HTML",
   },
   {
-    id: 10,
+    id: 9,
     expertise: "PSD to HTML",
   },
 ];
